@@ -1,6 +1,24 @@
 {
     "id": "https://github.com/JavaScriptGraphNotation/jsgn-schema/blob/master/jsgn-edge-schema.json",
     "$schema": "http://json-schema.org/draft-04/schema",
+    "oneOf": [
+	{ 
+	      "type": {
+	          "$ref": "#/definitions/edge"
+	      }
+	},
+	{
+	     "type": "object",
+	     "properties": {
+                 "edge": {
+		     "type": {
+                         "$ref": "#/definitions/edge"
+		     }
+	         }	
+	     },
+	     "additionalProperties": false
+	}
+    ],
     "definitions": { 
 	"edge": {
             "type": "object",

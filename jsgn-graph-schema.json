@@ -58,13 +58,15 @@
             ],
             "items": {
 	        "oneOf": [
-	            { "type": {
-	                  "$ref": "jsgn-node-schema.json#/definitions/node"
-		      }
+	            { 
+	                "type": {
+	                    "$ref": "jsgn-node-schema.json#/definitions/node"
+		        }
 		    },
-		    { "type": {
-	                  "$ref": "jsgn-metanode-schema.json#/definitions/metanode"
-		      }
+		    { 
+			"type": {
+	                    "$ref": "jsgn-metanode-schema.json#/definitions/metanode"
+		        }
 		    }
 	        ]
             }
@@ -76,13 +78,15 @@
             ],
             "items": {
 	        "oneOf": [
-		    { "type": {
-	                  "$ref": "jsgn-edge-schema.json#/definitions/edge"
-		      }
+		    { 
+		        "type": {
+	                     "$ref": "jsgn-edge-schema.json#/definitions/edge"
+		        }
 		    },
-		    { "type": {
-		          "$ref": "jsgn-hyperedge-schema.json#/definitions/hyperedge"
-		      }
+		    { 
+		        "type": {
+		             "$ref": "jsgn-hyperedge-schema.json#/definitions/hyperedge"
+		        }
 		    }
 		]
             }

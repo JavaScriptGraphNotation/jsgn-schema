@@ -1,6 +1,25 @@
 {
-    "id": "https://github.com/JavaScriptGraphNotation/jsgn-schema/blob/master/jsgn-edge-schema.json",
+    "id": "https://github.com/JavaScriptGraphNotation/jsgn-schema/blob/master/jsgn-hyperedge-schema.json",
     "$schema": "http://json-schema.org/draft-04/schema",
+    "oneOf": [
+	{ 
+	      "type": {
+	          "$ref": "#/definitions/hyperedge"
+	      }
+	},
+	{
+	     "type": "object",
+	     "properties": {
+                 "edge": {
+		     "type": {
+                         "$ref": "#/definitions/hyperedge"
+		     }
+	         }	
+	     },
+	     "additionalProperties": false
+	}
+    ],
+    "definitions": { 
     "definitions": { 
 	"edge": {
             "type": "object",
